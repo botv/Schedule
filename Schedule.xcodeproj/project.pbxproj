@@ -14,6 +14,7 @@
 		F73A3F9021581C3E00C69629 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73A3F8E21581C3E00C69629 /* LaunchScreen.storyboard */; };
 		F7823F872159E64100F6A35B /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7823F862159E64100F6A35B /* Schedule.storyboard */; };
 		F7823F892159E67500F6A35B /* UIStoryboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7823F882159E67500F6A35B /* UIStoryboard+Utility.swift */; };
+		F7AEC667215A81680006217F /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AEC666215A81680006217F /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F73A3F9121581C3E00C69629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7823F862159E64100F6A35B /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		F7823F882159E67500F6A35B /* UIStoryboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Utility.swift"; sourceTree = "<group>"; };
+		F7AEC666215A81680006217F /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F73A3F8721581C3E00C69629 /* ScheduleViewController.swift */,
+				F7AEC666215A81680006217F /* InitialViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				F7823F892159E67500F6A35B /* UIStoryboard+Utility.swift in Sources */,
 				F73A3F8821581C3E00C69629 /* ScheduleViewController.swift in Sources */,
 				F73A3F8621581C3E00C69629 /* AppDelegate.swift in Sources */,
+				F7AEC667215A81680006217F /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

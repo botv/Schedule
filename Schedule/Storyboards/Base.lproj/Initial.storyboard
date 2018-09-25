@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xcC-jM-kmr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ZJ-IU-JCc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="ebD-Os-hnZ">
             <objects>
-                <viewController id="xcC-jM-kmr" sceneMemberID="viewController">
+                <viewController id="xcC-jM-kmr" customClass="InitialViewController" customModule="Schedule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgM-8O-3i8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,11 +30,17 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1fm-2s-fQM"/>
                                     <barButtonItem title="Camera" style="plain" id="2vI-YY-RZY">
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cameraBarButtonItemPressed:" destination="xcC-jM-kmr" id="aUJ-SJ-6eW"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="DMV-mg-Jj6"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="nAH-w7-Yxb"/>
                                     <barButtonItem title="Library" style="plain" id="mb8-TI-PGf">
                                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="libraryBarButtonItemPressed:" destination="xcC-jM-kmr" id="eks-MG-fQ5"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ir5-6a-vbZ"/>
                                 </items>
@@ -51,13 +57,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Td6-rP-GYF"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DN3-Dg-Z6R">
+                        <barButtonItem key="backBarButtonItem" title="Pick new photo" id="hpK-F0-g3O"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="NK7-om-Xc7" kind="show" identifier="toScheduleViewController" id="946-Ed-xwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R72-Qg-Hrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="92"/>
+            <point key="canvasLocation" x="916" y="91.304347826086968"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="GiJ-ai-YDs">
@@ -65,7 +74,25 @@
                 <viewControllerPlaceholder storyboardName="Schedule" id="NK7-om-Xc7" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrN-GH-YVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="93"/>
+            <point key="canvasLocation" x="1788" y="92.653673163418304"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AV5-9G-kOs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ZJ-IU-JCc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dOy-KY-UAf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xcC-jM-kmr" kind="relationship" relationship="rootViewController" id="Sqp-Pk-Rui"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdc-Ik-iwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="91.304347826086968"/>
         </scene>
     </scenes>
 </document>

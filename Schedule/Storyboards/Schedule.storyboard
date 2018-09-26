@@ -42,7 +42,7 @@
                         <constraints>
                             <constraint firstItem="8dX-dK-BH6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Ai-sZ-QHL"/>
                             <constraint firstAttribute="trailing" secondItem="8dX-dK-BH6" secondAttribute="trailing" id="LPD-sm-ATP"/>
-                            <constraint firstItem="8dX-dK-BH6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="m8V-LF-kYI"/>
+                            <constraint firstItem="8dX-dK-BH6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="m8V-LF-kYI"/>
                             <constraint firstItem="8dX-dK-BH6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qnQ-65-VlH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="93"/>
+            <point key="canvasLocation" x="848.79999999999995" y="92.203898050974516"/>
         </scene>
     </scenes>
     <resources>

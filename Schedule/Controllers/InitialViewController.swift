@@ -10,17 +10,21 @@ import UIKit
 
 class InitialViewController: UIViewController {
     
+    let photoHelper = PhotoHelper()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        photoHelper.completionHandler = { image in
+            // insert image into UserDefaults
+            self.performSegue(withIdentifier: "toScheduleViewController", sender: self)
+        }
+        
+        self.navigationController?.view.backgroundColor = .white
     }
     
-    @IBAction func cameraBarButtonItemPressed(_ sender: Any) {
-        print("camera")
-        self.performSegue(withIdentifier: "toScheduleViewController", sender: self)
-    }
-    
-    @IBAction func libraryBarButtonItemPressed(_ sender: Any) {
-        print("library")
+    @IBAction func uploadPhotoButtonPressed(_ sender: Any) {
+        photoHelper.presentActionSheet(from: self)
     }
     
 }

@@ -19,41 +19,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No picture found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YP4-lw-7bs">
-                                <rect key="frame" x="0.0" y="318.5" width="375" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="0.0" y="315.5" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRb-IA-hKP">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1fm-2s-fQM"/>
-                                    <barButtonItem title="Camera" style="plain" id="2vI-YY-RZY">
-                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <action selector="cameraBarButtonItemPressed:" destination="xcC-jM-kmr" id="aUJ-SJ-6eW"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DMV-mg-Jj6"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nAH-w7-Yxb"/>
-                                    <barButtonItem title="Library" style="plain" id="mb8-TI-PGf">
-                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <action selector="libraryBarButtonItemPressed:" destination="xcC-jM-kmr" id="eks-MG-fQ5"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ir5-6a-vbZ"/>
-                                </items>
-                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqT-DD-1yp">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <state key="normal" title="Upload photo"/>
+                                <connections>
+                                    <action selector="uploadPhotoButtonPressed:" destination="xcC-jM-kmr" eventType="touchUpInside" id="s2J-W9-djb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Td6-rP-GYF" firstAttribute="bottom" secondItem="OqT-DD-1yp" secondAttribute="bottom" constant="20" id="49S-of-uhL"/>
                             <constraint firstItem="YP4-lw-7bs" firstAttribute="leading" secondItem="Td6-rP-GYF" secondAttribute="leading" id="5CI-YW-jAe"/>
                             <constraint firstItem="YP4-lw-7bs" firstAttribute="centerY" secondItem="hgM-8O-3i8" secondAttribute="centerY" id="Dpo-Gy-yYd"/>
-                            <constraint firstItem="rRb-IA-hKP" firstAttribute="trailing" secondItem="Td6-rP-GYF" secondAttribute="trailing" id="IQg-Co-kRK"/>
                             <constraint firstItem="Td6-rP-GYF" firstAttribute="trailing" secondItem="YP4-lw-7bs" secondAttribute="trailing" id="Mdh-PN-dlH"/>
-                            <constraint firstItem="rRb-IA-hKP" firstAttribute="leading" secondItem="Td6-rP-GYF" secondAttribute="leading" id="RUe-Tq-CzZ"/>
-                            <constraint firstItem="rRb-IA-hKP" firstAttribute="bottom" secondItem="Td6-rP-GYF" secondAttribute="bottom" id="gLY-al-NkC"/>
+                            <constraint firstItem="OqT-DD-1yp" firstAttribute="leading" secondItem="Td6-rP-GYF" secondAttribute="leading" constant="20" id="Xiv-5C-i6j"/>
+                            <constraint firstItem="Td6-rP-GYF" firstAttribute="trailing" secondItem="OqT-DD-1yp" secondAttribute="trailing" constant="20" id="eGM-nt-WhH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Td6-rP-GYF"/>
                     </view>

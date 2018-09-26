@@ -16,8 +16,9 @@ class InitialViewController: UIViewController {
         super.viewDidLoad()
         
         photoHelper.completionHandler = { image in
-            // insert image into UserDefaults
-            self.performSegue(withIdentifier: "toScheduleViewController", sender: self)
+            ImageService.saveImage(image: image) {
+                self.performSegue(withIdentifier: "toScheduleViewController", sender: self)
+            }
         }
         
         self.navigationController?.view.backgroundColor = .white

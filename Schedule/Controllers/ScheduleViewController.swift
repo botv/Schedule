@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ScheduleViewController.swift
 //  Schedule
 //
 //  Created by Ben Botvinick on 9/23/18.
@@ -18,6 +18,8 @@ class ScheduleViewController: UIViewController {
         
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 5.0
+        
+        imageView.image = ImageService.getSavedImage(named: "schedule.png")
     }
 
 }

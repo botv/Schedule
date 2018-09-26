@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71F7470215BFE43006659F9 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F746F215BFE43006659F9 /* ImageService.swift */; };
 		F739A666215B02D3009CCB1B /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739A665215B02D3009CCB1B /* PhotoHelper.swift */; };
 		F73A3F8621581C3E00C69629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A3F8521581C3E00C69629 /* AppDelegate.swift */; };
 		F73A3F8821581C3E00C69629 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A3F8721581C3E00C69629 /* ScheduleViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F71F746F215BFE43006659F9 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		F739A665215B02D3009CCB1B /* PhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
 		F73A3F8221581C3E00C69629 /* Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73A3F8521581C3E00C69629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71F7471215BFF2C006659F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F71F746F215BFE43006659F9 /* ImageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F739A664215B02AB009CCB1B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		F73A3F8421581C3E00C69629 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				F71F7471215BFF2C006659F9 /* Services */,
 				F739A664215B02AB009CCB1B /* Extensions */,
 				F7823F8A2159E67B00F6A35B /* Helpers */,
 				F73A3F9921581F6800C69629 /* Controllers */,
@@ -193,6 +204,7 @@
 				F739A666215B02D3009CCB1B /* PhotoHelper.swift in Sources */,
 				F73A3F8621581C3E00C69629 /* AppDelegate.swift in Sources */,
 				F7AEC667215A81680006217F /* InitialViewController.swift in Sources */,
+				F71F7470215BFE43006659F9 /* ImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

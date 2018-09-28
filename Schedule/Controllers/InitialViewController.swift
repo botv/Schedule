@@ -15,16 +15,20 @@ class InitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if UserDefaults.standard.bool(forKey: "picChosen") {
+            self.performSegue(withIdentifier: "toScheduleViewControllerNotAnimated", sender: self)
+        }
+        
         photoHelper.completionHandler = { image in
             ImageService.saveImage(image: image) {
+                UserDefaults.standard.set(true, forKey: "picChosen")
                 self.performSegue(withIdentifier: "toScheduleViewController", sender: self)
             }
         }
         
         self.navigationController?.view.backgroundColor = .white
     }
-    
-    @IBAction func uploadPhotoButtonPressed(_ sender: Any) {
+    @IBAction func uploadButtonPressed(_ sender: Any) {
         photoHelper.presentActionSheet(from: self)
     }
     

@@ -24,30 +24,26 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqT-DD-1yp">
-                                <rect key="frame" x="20" y="617" width="335" height="30"/>
-                                <state key="normal" title="Upload photo"/>
-                                <connections>
-                                    <action selector="uploadPhotoButtonPressed:" destination="xcC-jM-kmr" eventType="touchUpInside" id="s2J-W9-djb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Td6-rP-GYF" firstAttribute="bottom" secondItem="OqT-DD-1yp" secondAttribute="bottom" constant="20" id="49S-of-uhL"/>
                             <constraint firstItem="YP4-lw-7bs" firstAttribute="leading" secondItem="Td6-rP-GYF" secondAttribute="leading" id="5CI-YW-jAe"/>
                             <constraint firstItem="YP4-lw-7bs" firstAttribute="centerY" secondItem="hgM-8O-3i8" secondAttribute="centerY" id="Dpo-Gy-yYd"/>
                             <constraint firstItem="Td6-rP-GYF" firstAttribute="trailing" secondItem="YP4-lw-7bs" secondAttribute="trailing" id="Mdh-PN-dlH"/>
-                            <constraint firstItem="OqT-DD-1yp" firstAttribute="leading" secondItem="Td6-rP-GYF" secondAttribute="leading" constant="20" id="Xiv-5C-i6j"/>
-                            <constraint firstItem="Td6-rP-GYF" firstAttribute="trailing" secondItem="OqT-DD-1yp" secondAttribute="trailing" constant="20" id="eGM-nt-WhH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Td6-rP-GYF"/>
                     </view>
                     <navigationItem key="navigationItem" id="DN3-Dg-Z6R">
                         <barButtonItem key="backBarButtonItem" title="Pick new photo" id="hpK-F0-g3O"/>
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="pVj-kH-hAg">
+                            <connections>
+                                <action selector="uploadButtonPressed:" destination="xcC-jM-kmr" id="FAr-pk-EhR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="NK7-om-Xc7" kind="show" identifier="toScheduleViewController" id="946-Ed-xwU"/>
+                        <segue destination="NK7-om-Xc7" kind="show" identifier="toScheduleViewControllerNotAnimated" animates="NO" id="6Dn-g8-jjC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R72-Qg-Hrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -81,4 +77,7 @@
             <point key="canvasLocation" x="-23.199999999999999" y="91.304347826086968"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6Dn-g8-jjC"/>
+    </inferredMetricsTieBreakers>
 </document>
